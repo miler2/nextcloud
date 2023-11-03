@@ -13,6 +13,7 @@ add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu fo
 
 apt install docker-ce -y
 
+<<<<<<< HEAD
 
 #Instalamos el servidor web Apache
 
@@ -35,6 +36,8 @@ systemctl restart apache2
 
 chown -R www-data:www-data /var/www/html
 
+=======
+>>>>>>> 55db1cc9e2713d38b8154ecae3edda7792a7351b
 #Iniciamos el contenedor para NextCloud
 
 docker run --init --sig-proxy=false --name nextcloud-aio-mastercontainer --restart always --publish 8080:8080 --publish 8443:8443 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config --volume /var/run/docker.sock:/var/run/docker.sock:ro nextcloud/all-in-one:latest

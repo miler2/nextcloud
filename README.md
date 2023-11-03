@@ -91,3 +91,11 @@ Donde tendremos que poner el usuario y la contraseña que hemos visto anteriorme
 - También puedes seguir el siguiente video, donde la parte mas importante en referencia a Nextcloud es a partir del minuto "41:38"
 
     [Enlace al video de Youtube](https://www.youtube.com/watch?v=xBIowQ0WaR8)
+
+- La contraseña para la página de configuración de nextcloud es:
+"exponent handler multitask enlarged carefully bobbing oaf refurnish"
+``` 
+ Initial Nextcloud username: admin
+Initial Nextcloud password: 8582e32869bd5001088c41061e43f0d1538b09824778fc29
+
+```
