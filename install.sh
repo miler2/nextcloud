@@ -10,10 +10,5 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" -y
 apt install docker-ce -y
 
-#Modificamos el propietario y el grupo del directorio /var/www/html para
-#que la persona que abra esta página desde la web tenga permisos.
-#El comando "-R" para hacer los cambios de forma recursiva.
-chown -R www-data:www-data /var/www/html
-
 #Iniciamos el contenedor para NextCloud
 docker run --init --sig-proxy=false --name nextcloud-aio-mastercontainer --restart always --publish 8080:8080 --publish 8443:8443 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config --volume /var/run/docker.sock:/var/run/docker.sock:ro nextcloud/all-in-one:latest
